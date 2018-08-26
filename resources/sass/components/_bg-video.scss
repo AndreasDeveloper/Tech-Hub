@@ -1,0 +1,19 @@
+/* ------------------------------------------- */
+/* BACKGROUND VIDEO | HEADER
+/* ------------------------------------------- */
+
+.header__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    filter: brightness(20%);
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
