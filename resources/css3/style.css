@@ -74,6 +74,12 @@
       margin-bottom: 5rem !important; } }
 
 /* ---------------------------------------------------------- */
+/* U-MARGIN-TOP-SMALL CLASS IN TOURS SECTION | POSITION THE TEXT
+/* ---------------------------------------------------------- */
+.u-margin-top-small {
+  margin-top: 2rem !important; }
+
+/* ---------------------------------------------------------- */
 /* U-MARGIN-TOP-BIG CLASS IN TOURS SECTION | POSITION THE TEXT
 /* ---------------------------------------------------------- */
 .u-margin-top-medium {
@@ -173,6 +179,14 @@ body {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+/* ------------------------------------------------ */
+/* HEADING SECONDARY BOX EFFECT | FEATURES SECTION
+/* ------------------------------------------------ */
+.section-features__heading {
+  padding: 1.2rem;
+  transition: all 500ms;
+  position: relative; }
 
 /* ------------------------------------------- */
 /* BASIC SETUP
@@ -321,7 +335,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 90%;
+  height: 100%;
   width: 100%;
   filter: brightness(20%);
   overflow: hidden; }
@@ -329,6 +343,21 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+
+/* --------------------------------------------- */
+/* FEATURE BOX
+/* --------------------------------------------- */
+.feature-box {
+  background-color: rgba(118, 185, 0, 0.8);
+  color: #f7f7f7;
+  font-size: 1.2rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: .3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 300ms; }
+  .feature-box__icon {
+    padding-left: 11rem; }
 
 /* - LAYOUT FOLDER FILES - */
 /* ------------------------------------------- */
@@ -378,7 +407,7 @@ body {
 /* HEADER
 /* ------------------------------------------- */
 .header {
-  height: 95vh; }
+  height: 110vh; }
   .header__text-box {
     position: absolute;
     top: 50%;
@@ -410,4 +439,8 @@ body {
 /* SECTION FEATURES | IN HOME
 /* ------------------------------------------- */
 .section-features {
-  padding: 50rem; }
+  background-color: #000;
+  position: relative; }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 20rem 0; } }

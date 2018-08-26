@@ -33,5 +33,11 @@
 /* ------------------------------------------- */
 
 .section-features {
-    padding: 50rem;
+    background-color: $color-black;
+    position: relative;
+
+    // * --- MEDIA QUERIES --- * \\
+    @include respond(tab-port) {
+        padding: 20rem 0;
+    }
 }
