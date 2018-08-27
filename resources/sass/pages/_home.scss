@@ -30,14 +30,15 @@
 }
 
 /* ------------------------------------------- */
-/* SECTION GAMES | IN HOME
+/* SECTION GAME 1 | IN HOME
 /* ------------------------------------------- */
 
-.section-games {
+.section-game-1 {
     padding: 25rem 5rem;
     background-color: $color-black;
     background-image: linear-gradient(to bottom right, rgba($color-black, 1), rgba($color-black, .8)) ,url(../images/bg-1.jpg);
     background-size: cover;
+    background-attachment: fixed;
     margin-top: -20vh;
     position: relative;
 
@@ -49,6 +50,32 @@
         position: absolute;
         top: -5rem;
         left: 0;
-        
+    }
+}
+
+/* ------------------------------------------- */
+/* SECTION GAME 2 | IN HOME
+/* ------------------------------------------- */
+
+.section-game-2 {
+    padding: 25rem 5rem;
+    background-color: $color-black;
+    background-image: linear-gradient(to bottom right, rgba($color-black, 1), rgba($color-black, .8)) ,url(../images/sottr-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+
+    &__button {
+        position: absolute;
+        top: -5rem;
+        left: 0;
+    }
+    
+    &__container {
+        display: block;
+        float: right;
+        width: 40%;
+        text-align: right;
     }
 }

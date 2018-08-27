@@ -556,18 +556,40 @@ body {
     left: 55%; }
 
 /* ------------------------------------------- */
-/* SECTION GAMES | IN HOME
+/* SECTION GAME 1 | IN HOME
 /* ------------------------------------------- */
-.section-games {
+.section-game-1 {
   padding: 25rem 5rem;
   background-color: #000;
   background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/bg-1.jpg);
   background-size: cover;
+  background-attachment: fixed;
   margin-top: -20vh;
   position: relative; }
-  .section-games__paragraph {
+  .section-game-1__paragraph {
     width: 40%; }
-  .section-games__button {
+  .section-game-1__button {
     position: absolute;
     top: -5rem;
     left: 0; }
+
+/* ------------------------------------------- */
+/* SECTION GAME 2 | IN HOME
+/* ------------------------------------------- */
+.section-game-2 {
+  padding: 25rem 5rem;
+  background-color: #000;
+  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/sottr-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative; }
+  .section-game-2__button {
+    position: absolute;
+    top: -5rem;
+    left: 0; }
+  .section-game-2__container {
+    display: block;
+    float: right;
+    width: 40%;
+    text-align: right; }
