@@ -1,0 +1,103 @@
+/* ------------------------------------------- */
+/* SECTION GAME 1 | IN HOME
+/* ------------------------------------------- */
+
+.section-game-1 {
+    padding: 25rem 5rem;
+    width: 100%;
+    background-color: $color-black;
+    background-image: linear-gradient(to bottom right, rgba($color-black, 1), rgba($color-black, .8)) ,url(../images/bg-1.jpg);
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: top;
+    position: relative;
+    height: 100vh;
+
+    &__button {
+        position: absolute;
+        top: -5rem;
+        left: 0;
+    }
+
+    &__container {
+        
+        display: block;
+        float: left;
+        width: 40%;
+        text-align: left;
+
+        // * --- MEDIA QUERIES --- * \\
+        @include respond(phone) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+/* ------------------------------------------- */
+/* SECTION GAME 2 | IN HOME
+/* ------------------------------------------- */
+
+.section-game-2 {
+    padding: 25rem 5rem;
+    width: 100%;
+    background-color: $color-black;
+    background-image: linear-gradient(to bottom right, rgba($color-black, 1), rgba($color-black, .8)) ,url(../images/sottr-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+
+    &__button {
+        position: absolute;
+        top: -5rem;
+        left: 0;
+    }
+    
+    &__container {
+        display: block;
+        float: right;
+        width: 40%;
+        text-align: right;
+
+        // * --- MEDIA QUERIES * --- \\
+        @include respond(phone) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+/* ------------------------------------------- */
+/* SECTION GAME 3 | IN HOME
+/* ------------------------------------------- */
+
+.section-game-3 {
+    padding: 25rem 5rem;
+    width: 100%;
+    background-color: $color-black;
+    background-image: linear-gradient(to bottom right, rgba($color-black, 1), rgba($color-black, .8)), url(../images/metro-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+
+    &__button {
+        position: absolute;
+        top: -5rem;
+        left: 0;
+    }
+
+    &__container {
+        display: block;
+        float: left;
+        width: 40%;
+        text-align: left;
+
+        // * --- MEDIA QUERIES --- * \\
+        @include respond(phone) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

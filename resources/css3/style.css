@@ -372,6 +372,11 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+  @media (max-width: 75em) {
+    .header__video {
+      background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/ray-tracing-1.jpg);
+      background-size: cover;
+      background-attachment: fixed; } }
 
 /* ------------------------------------------- */
 /* SECTION CONTAINERS
@@ -387,62 +392,126 @@ body {
   background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/ray-tracing-1.jpg);
   background-size: cover;
   background-attachment: fixed;
+  background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
   width: 100%;
   height: 74vh;
   overflow: hidden;
   position: relative;
-  z-index: 600;
-  /*
-    &__button-1 {                   // IF BUTTON NEEDS TO BE POSITIONED ON CENTER, UNCOMMENT THIS
-        @include button-center;
-    } */ }
+  padding-left: 35%;
+  z-index: 600; }
   @media (max-width: 37.5em) {
     .section-container-1 {
-      padding-bottom: 100rem; } }
+      padding-bottom: 80rem; } }
+  .section-container-1__icon {
+    font-size: 6rem;
+    position: absolute;
+    top: 18%;
+    left: 48%;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7cd000, #577a1a);
+    -webkit-background-clip: text;
+    color: transparent;
+    /*letter-spacing: .2rem;
+        transition: all .2s; */ }
+    @media (max-width: 56.25em) {
+      .section-container-1__icon {
+        margin-bottom: 0;
+        top: 10%; } }
+    @media (max-width: 37.5em) {
+      .section-container-1__icon {
+        top: 10%; } }
   .section-container-1__text {
     padding: 15rem 5rem 0 5rem;
     text-align: center; }
+  @media (max-width: 37.5em) {
+    .section-container-1__button-1 {
+      position: absolute;
+      left: 5%;
+      top: 0; } }
 
 .section-container-2 {
   background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/bf-2.jpg);
   background-size: cover;
   background-attachment: fixed;
+  background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   margin-top: -12rem;
+  padding-left: 35%;
   overflow: hidden;
   position: relative;
   z-index: 500; }
   @media (max-width: 37.5em) {
     .section-container-2 {
-      padding-bottom: 100rem; } }
+      padding-bottom: 80rem;
+      margin-top: -14rem; } }
+  .section-container-2__icon {
+    font-size: 6rem;
+    position: absolute;
+    top: 20%;
+    left: 48%;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7cd000, #577a1a);
+    -webkit-background-clip: text;
+    color: transparent;
+    /*letter-spacing: .2rem;
+        transition: all .2s; */ }
+    @media (max-width: 56.25em) {
+      .section-container-2__icon {
+        margin-bottom: 0;
+        top: 10%; } }
   .section-container-2__text {
-    padding: 15rem 5rem 0 5rem;
+    padding: 20rem 5rem 0 5rem;
     text-align: center; }
     @media (max-width: 56.25em) {
       .section-container-2__text {
         padding-top: 20rem;
         padding-bottom: 15rem; } }
+  @media (max-width: 37.5em) {
+    .section-container-2__button-2 {
+      position: absolute;
+      left: 5%;
+      top: 0; } }
 
 .section-container-3 {
   background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/bf-c-1.png);
   background-size: cover;
   background-attachment: fixed;
+  background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
   width: 100%;
-  height: 90vh;
+  height: 105vh;
   margin-top: -15rem;
+  padding-left: 35%;
   overflow: hidden;
   position: relative;
   z-index: 400; }
   @media (max-width: 37.5em) {
     .section-container-3 {
-      padding-bottom: 100rem; } }
+      padding-bottom: 80rem; } }
+  .section-container-3__icon {
+    font-size: 6rem;
+    position: absolute;
+    top: 28%;
+    left: 48%;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7cd000, #577a1a);
+    -webkit-background-clip: text;
+    color: transparent;
+    /*letter-spacing: .2rem;
+        transition: all .2s; */ }
+    @media (max-width: 75em) {
+      .section-container-3__icon {
+        top: 28%; } }
+    @media (max-width: 56.25em) {
+      .section-container-3__icon {
+        margin-bottom: 0;
+        top: 10%; } }
   .section-container-3__text {
     padding-right: 5rem;
     padding-left: 5rem;
@@ -452,22 +521,48 @@ body {
       .section-container-3__text {
         padding-top: 20rem;
         padding-bottom: 25rem; } }
+  @media (max-width: 37.5em) {
+    .section-container-3__button-3 {
+      position: absolute;
+      left: 5%;
+      top: 0; } }
 
 .section-container-4 {
   background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/bf-4.png);
   background-size: cover;
   background-attachment: fixed;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+  background-position: top;
+  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);    // IN THIS CASE NO CLIP PATH, BECAUSE OF THE PERFECT IMAGE POSITION. IT FITS NEXT SECTION TRANSITION BETTER. \\
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%); */
   width: 100%;
   height: 100vh;
   margin-top: -20rem;
+  padding-left: 35%;
   overflow: hidden;
   position: relative;
   z-index: 300; }
   @media (max-width: 37.5em) {
     .section-container-4 {
-      padding-bottom: 100rem; } }
+      padding-bottom: 80rem; } }
+  .section-container-4__icon {
+    font-size: 6rem;
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7cd000, #577a1a);
+    -webkit-background-clip: text;
+    color: transparent;
+    /*letter-spacing: .2rem;
+        transition: all .2s; */ }
+    @media (max-width: 75em) {
+      .section-container-4__icon {
+        top: 25%; } }
+    @media (max-width: 56.25em) {
+      .section-container-4__icon {
+        margin-bottom: 0;
+        top: 10%;
+        margin-top: -15rem; } }
   .section-container-4__text {
     padding-right: 5rem;
     padding-left: 5rem;
@@ -475,8 +570,91 @@ body {
     text-align: center; }
     @media (max-width: 56.25em) {
       .section-container-4__text {
-        padding-top: 20rem;
-        padding-bottom: 15rem; } }
+        padding-top: 20rem; } }
+  @media (max-width: 37.5em) {
+    .section-container-4__button-4 {
+      position: absolute;
+      left: 5%;
+      top: 0; } }
+
+/* ------------------------------------------- */
+/* SECTION GAME 1 | IN HOME
+/* ------------------------------------------- */
+.section-game-1 {
+  padding: 25rem 5rem;
+  width: 100%;
+  background-color: #000;
+  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/bg-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  position: relative;
+  height: 100vh; }
+  .section-game-1__button {
+    position: absolute;
+    top: -5rem;
+    left: 0; }
+  .section-game-1__container {
+    display: block;
+    float: left;
+    width: 40%;
+    text-align: left; }
+    @media (max-width: 37.5em) {
+      .section-game-1__container {
+        width: 100%;
+        text-align: center; } }
+
+/* ------------------------------------------- */
+/* SECTION GAME 2 | IN HOME
+/* ------------------------------------------- */
+.section-game-2 {
+  padding: 25rem 5rem;
+  width: 100%;
+  background-color: #000;
+  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/sottr-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative; }
+  .section-game-2__button {
+    position: absolute;
+    top: -5rem;
+    left: 0; }
+  .section-game-2__container {
+    display: block;
+    float: right;
+    width: 40%;
+    text-align: right; }
+    @media (max-width: 37.5em) {
+      .section-game-2__container {
+        width: 100%;
+        text-align: center; } }
+
+/* ------------------------------------------- */
+/* SECTION GAME 3 | IN HOME
+/* ------------------------------------------- */
+.section-game-3 {
+  padding: 25rem 5rem;
+  width: 100%;
+  background-color: #000;
+  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/metro-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative; }
+  .section-game-3__button {
+    position: absolute;
+    top: -5rem;
+    left: 0; }
+  .section-game-3__container {
+    display: block;
+    float: left;
+    width: 40%;
+    text-align: left; }
+    @media (max-width: 37.5em) {
+      .section-game-3__container {
+        width: 100%;
+        text-align: center; } }
 
 /* - LAYOUT FOLDER FILES - */
 /* ------------------------------------------- */
@@ -526,13 +704,27 @@ body {
 /* HEADER
 /* ------------------------------------------- */
 .header {
-  height: 110vh; }
+  height: 110vh;
+  width: 100%; }
   .header__text-box {
     position: absolute;
     top: 50%;
     left: 25%;
     transform: translate(-50%, -50%);
     text-align: left; }
+    @media (max-width: 75em) {
+      .header__text-box {
+        position: absolute;
+        top: 50%;
+        left: 45%; } }
+    @media (max-width: 37.5em) {
+      .header__text-box {
+        left: 50%;
+        text-align: center; } }
+  @media (max-width: 37.5em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
 
 /* - PAGES FOLDER FILES - */
 /* ------------------------------------------- */
@@ -549,47 +741,16 @@ body {
     position: absolute;
     top: 35%;
     right: 50%; }
+    @media (max-width: 37.5em) {
+      .section-pb__heading {
+        font-size: 3rem;
+        right: 45%; } }
   .section-pb__logo {
     position: absolute;
     height: 15rem;
     top: 25%;
     left: 55%; }
-
-/* ------------------------------------------- */
-/* SECTION GAME 1 | IN HOME
-/* ------------------------------------------- */
-.section-game-1 {
-  padding: 25rem 5rem;
-  background-color: #000;
-  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/bg-1.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  margin-top: -20vh;
-  position: relative; }
-  .section-game-1__paragraph {
-    width: 40%; }
-  .section-game-1__button {
-    position: absolute;
-    top: -5rem;
-    left: 0; }
-
-/* ------------------------------------------- */
-/* SECTION GAME 2 | IN HOME
-/* ------------------------------------------- */
-.section-game-2 {
-  padding: 25rem 5rem;
-  background-color: #000;
-  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/sottr-1.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  position: relative; }
-  .section-game-2__button {
-    position: absolute;
-    top: -5rem;
-    left: 0; }
-  .section-game-2__container {
-    display: block;
-    float: right;
-    width: 40%;
-    text-align: right; }
+    @media (max-width: 37.5em) {
+      .section-pb__logo {
+        height: 10rem;
+        left: 60%; } }

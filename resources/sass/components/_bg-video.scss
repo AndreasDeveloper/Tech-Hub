@@ -16,4 +16,11 @@
         width: 100%;
         object-fit: cover;
     }
+
+    // --- VIDEO NOT DISPLAYING ON SMALLER DEVICES (PERFORMANCE OPTIMIZATION) --- \\
+    @include respond(tab-land) {
+        background-image: linear-gradient(to bottom right, rgba($color-black, 1), rgba($color-black, .8)), url(../images/ray-tracing-1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }

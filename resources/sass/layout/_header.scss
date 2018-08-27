@@ -5,6 +5,7 @@
 .header {
 
     height: 110vh;
+    width: 100%;
 
     &__text-box {
         position: absolute;
@@ -12,6 +13,23 @@
         left: 25%;
         transform: translate(-50%, -50%);
         text-align: left;
+
+        // * --- PHONE QUERIES * --- \\
+        @include respond(tab-land) {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+        }
+
+        @include respond(phone) {
+            left: 50%;
+            text-align: center;
+        }
     }
 
+     // * --- MEDIA QUERIES --- * \\
+     @include respond(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    } 
 }
