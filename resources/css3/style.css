@@ -329,6 +329,35 @@ body {
     animation-fill-mode: backwards; }
 
 /* ------------------------------------------- */
+/* BUTTON TEXT | 
+/* ------------------------------------------- */
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #76b900;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #76b900;
+  padding: 3px;
+  transition: all .2s;
+  position: relative; }
+
+.btn-text:hover {
+  background-color: #76b900;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+@media (max-width: 37.5em) {
+  .btn-text {
+    position: absolute;
+    top: 0;
+    left: 9.5rem; } }
+
+/* ------------------------------------------- */
 /* BACKGROUND VIDEO | HEADER
 /* ------------------------------------------- */
 .header__video {
@@ -344,20 +373,106 @@ body {
     width: 100%;
     object-fit: cover; }
 
-/* --------------------------------------------- */
-/* FEATURE BOX
-/* --------------------------------------------- */
-.feature-box {
-  background-color: rgba(118, 185, 0, 0.8);
-  color: #f7f7f7;
-  font-size: 1.2rem;
-  padding: 2.5rem;
-  text-align: center;
-  border-radius: .3rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform 300ms; }
-  .feature-box__icon {
-    padding-left: 11rem; }
+/* ------------------------------------------- */
+/* SECTION CONTAINERS
+/* ------------------------------------------- */
+.section-container-header {
+  font-size: 2.2rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7cd000, #577a1a);
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.section-container-1 {
+  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/ray-tracing-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 600;
+  /*
+    &__button-1 {                   // IF BUTTON NEEDS TO BE POSITIONED ON CENTER, UNCOMMENT THIS
+        @include button-center;
+    } */ }
+  @media (max-width: 37.5em) {
+    .section-container-1 {
+      padding-bottom: 100rem; } }
+  .section-container-1__text {
+    padding: 15rem 5rem 0 5rem; }
+
+.section-container-2 {
+  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/bf-2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+  width: 100%;
+  height: 80vh;
+  margin-top: -12rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 500; }
+  @media (max-width: 37.5em) {
+    .section-container-2 {
+      padding-bottom: 100rem; } }
+  .section-container-2__text {
+    padding: 15rem 5rem 0 5rem; }
+    @media (max-width: 56.25em) {
+      .section-container-2__text {
+        padding-top: 20rem;
+        padding-bottom: 15rem; } }
+
+.section-container-3 {
+  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/bf-c-1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+  width: 100%;
+  height: 90vh;
+  margin-top: -12rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 400; }
+  @media (max-width: 37.5em) {
+    .section-container-3 {
+      padding-bottom: 100rem; } }
+  .section-container-3__text {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-top: 30rem; }
+    @media (max-width: 56.25em) {
+      .section-container-3__text {
+        padding-top: 20rem;
+        padding-bottom: 25rem; } }
+
+.section-container-4 {
+  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/bf-4.png);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+  width: 100%;
+  height: 100vh;
+  margin-top: -15rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 300; }
+  @media (max-width: 37.5em) {
+    .section-container-4 {
+      padding-bottom: 100rem; } }
+  .section-container-4__text {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-top: 30rem; }
+    @media (max-width: 56.25em) {
+      .section-container-4__text {
+        padding-top: 20rem;
+        padding-bottom: 15rem; } }
 
 /* - LAYOUT FOLDER FILES - */
 /* ------------------------------------------- */
@@ -420,6 +535,7 @@ body {
 /* SECTION POWERED BY | IN HOME
 /* ------------------------------------------- */
 .section-pb {
+  border-top: 0.3rem solid #76b900;
   background-color: #000;
   padding: 10rem 0;
   margin-top: -20vh;
@@ -436,11 +552,9 @@ body {
     left: 55%; }
 
 /* ------------------------------------------- */
-/* SECTION FEATURES | IN HOME
+/* SECTION GAMES | IN HOME
 /* ------------------------------------------- */
-.section-features {
+.section-games {
+  padding-bottom: 25rem;
   background-color: #000;
-  position: relative; }
-  @media (max-width: 56.25em) {
-    .section-features {
-      padding: 20rem 0; } }
+  margin-top: -20vh; }

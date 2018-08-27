@@ -4,6 +4,7 @@
 
 .section-pb {
 
+    border-top: .3rem solid $color-primary;
     background-color: $color-black;
     padding: 10rem 0;
     margin-top: -20vh;
@@ -29,15 +30,11 @@
 }
 
 /* ------------------------------------------- */
-/* SECTION FEATURES | IN HOME
+/* SECTION GAMES | IN HOME
 /* ------------------------------------------- */
 
-.section-features {
+.section-games {
+    padding-bottom: 25rem;
     background-color: $color-black;
-    position: relative;
-
-    // * --- MEDIA QUERIES --- * \\
-    @include respond(tab-port) {
-        padding: 20rem 0;
-    }
+    margin-top: -20vh;
 }
