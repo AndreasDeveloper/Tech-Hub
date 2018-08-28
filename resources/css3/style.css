@@ -584,7 +584,7 @@ body {
   padding: 25rem 5rem;
   width: 100%;
   background-color: #000;
-  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/bg-1.jpg);
+  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.7)), url(../images/bg-1.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: top;
@@ -601,6 +601,9 @@ body {
       .section-game-1__container {
         width: 100%;
         text-align: center; } }
+  .section-game-1__supp {
+    font-size: 1.3rem;
+    margin-top: -3rem; }
 
 /* ------------------------------------------- */
 /* SECTION GAME 2 | IN HOME
@@ -609,7 +612,7 @@ body {
   padding: 25rem 5rem;
   width: 100%;
   background-color: #000;
-  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/sottr-1.jpg);
+  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.7)), url(../images/sottr-1.jpg);
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -627,6 +630,9 @@ body {
       .section-game-2__container {
         width: 100%;
         text-align: center; } }
+  .section-game-2__supp {
+    font-size: 1.3rem;
+    margin-top: -3rem; }
 
 /* ------------------------------------------- */
 /* SECTION GAME 3 | IN HOME
@@ -635,7 +641,7 @@ body {
   padding: 25rem 5rem;
   width: 100%;
   background-color: #000;
-  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8)), url(../images/metro-1.jpg);
+  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.7)), url(../images/metro-1.jpg);
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -653,6 +659,9 @@ body {
       .section-game-3__container {
         width: 100%;
         text-align: center; } }
+  .section-game-3__supp {
+    font-size: 1.3rem;
+    margin-top: -3rem; }
 
 /* ------------------------------------------- */
 /* SECTION PRODUCTS SETUP / PRICING | CARDS
