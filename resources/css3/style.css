@@ -595,8 +595,6 @@ body {
     top: -5rem;
     left: 0; }
   .section-game-1__container {
-    display: block;
-    float: left;
     width: 40%;
     text-align: left; }
     @media (max-width: 37.5em) {
@@ -655,6 +653,27 @@ body {
       .section-game-3__container {
         width: 100%;
         text-align: center; } }
+
+/* ------------------------------------------- */
+/* SECTION PRODUCTS SETUP / PRICING | CARDS
+/* ------------------------------------------- */
+.card-1__heading {
+  font-size: 3.1rem; }
+
+.card-1__price {
+  font-size: 2rem; }
+
+.card-2__heading {
+  font-size: 3.1rem; }
+
+.card-2__price {
+  font-size: 2rem; }
+
+.card-3__heading {
+  font-size: 3.1rem; }
+
+.card-3__price {
+  font-size: 2rem; }
 
 /* - LAYOUT FOLDER FILES - */
 /* ------------------------------------------- */
@@ -754,3 +773,13 @@ body {
       .section-pb__logo {
         height: 10rem;
         left: 60%; } }
+
+/* ------------------------------------------- */
+/* SECTION PRODUCTS | IN HOME
+/* ------------------------------------------- */
+.section-products {
+  background-color: #000;
+  padding: 20rem 0 20rem 0; }
+  @media (max-width: 56.25em) {
+    .section-products {
+      padding: 20rem 0 10rem 0; } }

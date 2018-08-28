@@ -40,3 +40,17 @@
         }
     }
 }
+
+/* ------------------------------------------- */
+/* SECTION PRODUCTS | IN HOME
+/* ------------------------------------------- */
+
+.section-products {
+    background-color: $color-black;
+    padding: 20rem 0 20rem 0;
+
+    // * --- MEDIA QUERIES --- * \\
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
+}
