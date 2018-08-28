@@ -28,7 +28,7 @@
     overflow: hidden;
     position: relative;
     // PADDING AND Z-INDEX
-    z-index: 600;
+    z-index: 15;
 
     // * --- MEDIA QUERIES | FOR CONTAINER 1 --- * \\
     @include respond(phone) {
@@ -98,7 +98,7 @@
     overflow: hidden;
     position: relative;
     // Z-INDEX
-    z-index: 500;
+    z-index: 14;
 
     // * --- MEDIA QUERIES | FOR CONTAINER 2 GENERAL --- * \\
     @include respond(tab-port) {
@@ -174,7 +174,7 @@
     overflow: hidden;
     position: relative;
     // Z-INDEX
-    z-index: 400;
+    z-index: 13;
 
      // * --- MEDIA QUERIES | FOR THE CONTAINER 3 --- * \\
      @include respond(phone) {
@@ -251,7 +251,7 @@
     overflow: hidden;
     position: relative;
     // Z-INDEX
-    z-index: 300;
+    z-index: 12;
 
     // * --- MEDIA QUERIES | FOR THE CONTAINER 4 --- * \\
 
