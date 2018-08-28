@@ -50,7 +50,6 @@
     }
 
     &__paragraph {
-
         color: $color-white;
         text-align: center;
         font-size: 2.3rem;
@@ -143,7 +142,7 @@
                 
                 // SELECT ALL OF THE ELEMENTS EXCEPT THE LAST ONE \\
                 &:not(:last-child) {
-                    border-bottom: 1px solid $color-white;
+                    border-bottom: .12rem solid $color-white;
                 }
             }
         }

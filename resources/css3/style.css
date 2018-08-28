@@ -468,7 +468,7 @@ body {
         padding: 1rem;
         color: #fff; }
         .card__details ul li:not(:last-child) {
-          border-bottom: 1px solid #fff; }
+          border-bottom: 0.12rem solid #fff; }
   .card__cta {
     position: absolute;
     top: 50%;
