@@ -192,10 +192,11 @@
             <!-- TOURS SECTION STARTS -->
             <section class="section-products">
                 <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">Get Your RTX Today</h2>
+                    <h2 class="heading-secondary section-products__heading">Get Your RTX Today</h2>
                  </div>
 
                  <div class="row">
+                     <!-- CARD 1 -->
                     <div class="col-1-of-3">
                         <div class="card">
                             <div class="card__side card__side--front">
@@ -207,6 +208,13 @@
                                     </h4>
                                     <div class="card__details">
                                         <p class="card__paragraph">Founders Edition</p>
+                                        <ul>
+                                            <li>GPU architecture: Turing</li>
+                                            <li>RTX-OPS: 78T</li>
+                                            <li>Boost Clock: 1635MHz (OC)</li>
+                                            <li>Frame Buffer: 11GB DDR6</li>
+                                            <li>Memory Speed: 14 Gbps</li>
+                                        </ul>
                                     </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-1">
@@ -221,6 +229,7 @@
                         </div>
                     </div>
 
+                    <!-- CARD 2 -->
                     <div class="col-1-of-3">
                         <div class="card">
                             <div class="card__side card__side--front">
@@ -232,6 +241,13 @@
                                     </h4>
                                     <div class="card__details">
                                        <p class="card__paragraph">Founders Edition</p>
+                                       <ul>
+                                        <li>GPU architecture: Turing</li>
+                                        <li>RTX-OPS: 60T</li>
+                                        <li>Boost Clock: 1800MHz (OC)</li>
+                                        <li>Frame Buffer: 8GB DDR6</li>
+                                        <li>Memory Speed: 14 Gbps</li>
+                                    </ul>
                                     </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-2">
@@ -246,6 +262,7 @@
                         </div>
                     </div>
 
+                    <!-- CARD 3 -->
                     <div class="col-1-of-3">
                         <div class="card">
                             <div class="card__side card__side--front">
@@ -257,6 +274,13 @@
                                     </h4>
                                     <div class="card__details">
                                         <p class="card__paragraph">Founders Edition</p>
+                                        <ul>
+                                            <li>GPU architecture: Turing</li>
+                                            <li>RTX-OPS: 45T</li>
+                                            <li>Boost Clock: 1710MHz (OC)</li>
+                                            <li>Frame Buffer: 8GB DDR6</li>
+                                            <li>Memory Speed: 14 Gbps</li>
+                                        </ul>
                                     </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-3">
@@ -279,9 +303,38 @@
     </main>
     <!-- MAIN CONTENT ENDS -->
 
-    <footer class="footer">
+     <!-- FOOTER STARTS -->
+     <footer class="footer">
+        <div class="footer__logo-box">
 
+            <!-- IMAGE LOGO OPTIMIZATION FOR HIGH RES / LOW RES SCREENS | ART DIRECTION -->
+            <picture class="footer__logo">                                                                                <!-- IF THE SIZE IS LESS THEN 600px APPLY THIS SOURCE -->
+                <source srcset="resources/images/logo-2.png 1x, resources/images/logo-2.png 2x" media="(max-width: 37.5em)">    <!-- SMAL LOGO -->
+                <img srcset="resources/images/logo-2.png 1x, resources/images/logo-2.png 2x" alt="Natours Logo" src="resources/images/logo-green-2x.png"> <!-- DENISTY SWITCHING -->
+            </picture>
+
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Features</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Games</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Products</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Built by <a href="#" class="footer__link">AndreasDEV</a> for Nvidia's fictional website. Copyright &copy; by AndreasDEV. 
+                </p>
+            </div>
+        </div>
     </footer>
+    <!-- FOOTER ENDS -->
+
 
     <!-- SCRIPTS / CDN's / FILES -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
