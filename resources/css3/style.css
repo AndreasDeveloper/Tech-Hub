@@ -727,7 +727,7 @@ body {
   .header__text-box {
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 28%;
     transform: translate(-50%, -50%);
     text-align: left; }
     @media (max-width: 75em) {
