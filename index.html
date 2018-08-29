@@ -20,13 +20,20 @@
 
         <!-- NAVIGATION SETUP STARTS -->
             <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a class="navigation__anchor" href="#">Home</a></li>
-                    <li class="navigation__item"><a class="navigation__anchor" href="#">Features</a></li>
-                    <li class="navigation__item"><a class="navigation__anchor" href="#">Games</a></li>
-                    <li class="navigation__item"><a class="navigation__anchor" href="#">Products</a></li>
-                    <li class="navigation__item"><a class="navigation__anchor" href="#">Contact</a></li>
-                </ul>
+                <!-- MOBILE NAVIGATION MARKUP -->
+                <div class="navigation__menu-icon">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+
+                <div class="navigation__menu">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a class="navigation__anchor" href="#">Home</a></li>
+                        <li class="navigation__item"><a class="navigation__anchor" href="#">Features</a></li>
+                        <li class="navigation__item"><a class="navigation__anchor" href="#">Games</a></li>
+                        <li class="navigation__item"><a class="navigation__anchor" href="#">Products</a></li>
+                        <li class="navigation__item"><a class="navigation__anchor" href="#">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         <!-- NAVIGATION SETUP ENDS -->
 
@@ -338,6 +345,9 @@
 
     <!-- SCRIPTS / CDN's / FILES -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- ICON ION CDN -->
+    <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
 
     <!-- JS FILES -->
     <script src="resources/js/navigation.js"></script>

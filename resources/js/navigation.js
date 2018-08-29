@@ -15,4 +15,10 @@ $(document).ready(function() {
                 $('nav').removeClass('fixed');
             }
     });
+
+    
+    // MAKES BUTTON TO WORK AND DISPLAYS MOBILE NAVIGATION \\
+    $(".navigation__menu-icon").on("click", function() {
+        $("nav ul").toggleClass("showing");
+    });
 });

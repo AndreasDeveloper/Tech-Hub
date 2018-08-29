@@ -19,6 +19,17 @@
         padding: 2.4rem 5rem;
         font-size: 1.2rem;
         font-weight: 400;
+    } 
+
+    &__list {
+        list-style: none;
+        background: rgba(0,0,0,0);
+        overflow: hidden;
+        color: $color-white;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+        transition: 1s;
     }
 
     &__anchor {
@@ -27,6 +38,17 @@
         text-decoration: none;
         font-size: 1.7rem;
     }
+
+    &__menu-icon {
+        background-color: $color-black;
+        width: 100%;
+        font-size: 3rem;
+        text-align: right;
+        box-sizing: border-box;
+        padding: 1.5rem 2.4rem;
+        color: $color-white;
+        display: none;
+    }
 }
 
 // * --- MEDIA QUERIES | MAKING NAVIGATION FOR MOBILES --- * \\
@@ -34,16 +56,55 @@
 
     .navigation {
 
-        &__item {
-            padding: 2.4rem .4rem;
+        &__list {
+            max-height: 0px;
+            background-color: $color-black;
         }
 
-        &__anchor {
-            font-size: 1.4rem;
+        &__item {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 2.4rem 0;
+            text-align: center;
         }
+
+        &__menu-icon {
+            display: block;
+        }
+    }
+
+    nav.scroll ul {
+        background-color: $color-black;
+    }
+
+    .showing {
+        max-height: 50em;
     }
 }
 
+// JS PART OF THE NAVIGATION FOR MOBILES. THIS PART WILL BE ADDED TROUGH JS | \\
+nav.scroll ul {
+    background-color: $color-black;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 2rem;
+}
+
+nav.scroll ul li a {
+    color: $color-white;
+    border-bottom: .2rem solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    padding-bottom: 1rem;
+}
 
 
 // THIS CLASS IS ADDED  WHEN USER STARTS SCROLLING | JS PART
@@ -55,13 +116,12 @@
     border-bottom: .1rem solid $color-primary;
 
     .navigation__anchor {
-        border-bottom: .2rem solid $color-black;
+        border-bottom: .2rem solid transparent;
         transition: border-bottom .2s;
         padding-bottom: .5rem;
     }
 
     .navigation__anchor:hover {
-        border-bottom: .2rem solid $color-primary;
+        border-bottom: .1rem solid $color-primary;
     }
-
 }
