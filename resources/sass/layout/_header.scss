@@ -15,7 +15,15 @@
         transform: translate(-50%, -50%);
         text-align: left;
 
-        // * --- PHONE QUERIES * --- \\
+        // * --- MEDIA QUERIES * --- \\
+        @include respond(lap-top-2) {
+            left: 36%;
+        }
+
+        @include respond(lap-top) {
+            left: 35%;
+        }
+
         @include respond(tab-land) {
             position: absolute;
             top: 50%;

@@ -904,6 +904,12 @@ body {
     left: 28%;
     transform: translate(-50%, -50%);
     text-align: left; }
+    @media (max-width: 81.875em) {
+      .header__text-box {
+        left: 36%; } }
+    @media (min-width: 82.062em) {
+      .header__text-box {
+        left: 35%; } }
     @media (max-width: 75em) {
       .header__text-box {
         position: absolute;

@@ -80,6 +80,14 @@
         @media (max-width: 75em) { @content };    // 1200px
     }
 
+    @if $breakpoint == lap-top-2 {
+        @media (max-width: 81.875em) { @content }; // 1300px
+    }
+
+    @if $breakpoint == lap-top {
+        @media (min-width: 82.062em) { @content }; // 1313px
+    }
+
     @if $breakpoint == small-desktop {
         @media (min-width: 86.375em)   { @content };   // 1382px
     }
