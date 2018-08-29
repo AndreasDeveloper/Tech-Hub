@@ -17,6 +17,11 @@
         right: 50%;
 
         // * --- MEDIA QUERIES * --- \\
+        @include respond(ipad) {
+            padding-top: 3rem;
+            font-size: 2.8rem;
+        }
+
         @include respond(phone) {
             font-size: 3rem;
             right: 45%;
@@ -30,6 +35,10 @@
         left: 55%;
 
         // * --- MEDIA QUERIES * --- \\
+        @include respond(ipad) {
+            top: 42%;
+        }
+
         @include respond(phone) {
             height: 10rem;
             left: 60%;
