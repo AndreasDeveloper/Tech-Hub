@@ -913,7 +913,6 @@ body {
     @media (max-width: 75em) {
       .header__text-box {
         position: absolute;
-        top: 50%;
         left: 45%; } }
     @media (max-width: 37.5em) {
       .header__text-box {
@@ -922,7 +921,16 @@ body {
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
+      .header .header__video {
+        display: none !important; }
+      .header .header__text-box {
+        overflow: hidden;
+        background-image: url(../images/ray-tracing-2.jpg);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        padding-top: 30rem; } }
 
 /* ------------------------------------------- */
 /* NAVIGATION
