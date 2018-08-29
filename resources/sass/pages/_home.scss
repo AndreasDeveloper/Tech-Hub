@@ -30,9 +30,9 @@
 
     &__logo {
         position: absolute;
-        height: 15rem;
-        top: 35%;
-        left: 55%;
+        height: 20rem;
+        top: 27%;
+        left: 48%;
 
         // * --- MEDIA QUERIES * --- \\
         @include respond(ipad) {

@@ -1097,9 +1097,9 @@ nav.scroll ul li a {
         right: 45%; } }
   .section-pb__logo {
     position: absolute;
-    height: 15rem;
-    top: 35%;
-    left: 55%; }
+    height: 20rem;
+    top: 27%;
+    left: 48%; }
     @media (max-width: 48em) {
       .section-pb__logo {
         top: 42%; } }
