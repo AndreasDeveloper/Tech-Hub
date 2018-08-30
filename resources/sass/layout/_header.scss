@@ -12,7 +12,7 @@
         position: absolute;
         top: 50%;
         left: 28%;
-        transform: translate(-50%, -50%);
+        transform: translate(-65%, -50%);
         text-align: left;
 
         &__button {
@@ -52,6 +52,7 @@
             overflow: hidden;
             background-image: url(../images/ray-tracing-2.jpg);
             background-size: cover;
+            background-position: top;
             height: 100%;
             width: 100%;
             padding-top: 30rem;

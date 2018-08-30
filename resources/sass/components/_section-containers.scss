@@ -130,6 +130,15 @@
             margin-bottom: 0;
             top: 23%;
         }
+
+        @include respond(iphone-p) {
+            top: 15%;
+            left: 45%;
+        }
+
+        @include respond(iphone) {
+            top: 20%;
+        }
     }
 
     // CONTENT INSIDE OF THE TEXT DIV ELEMENT
@@ -141,6 +150,14 @@
           @include respond(tab-port) {
             padding-top: 30rem;
             padding-bottom: 15rem;
+        }
+
+        @include respond(iphone-p) {
+            margin-top: -10rem;
+        }
+
+        @include respond(iphone) {
+            margin-top: -10rem;
         }
     }
 
@@ -177,6 +194,10 @@
     z-index: 13;
 
      // * --- MEDIA QUERIES | FOR THE CONTAINER 3 --- * \\
+    @include respond(ipad) {
+        margin-top: -20rem;
+    }
+
      @include respond(phone) {
         padding-bottom: 80rem;
     }
@@ -186,7 +207,7 @@
         font-size: 6rem;
         position: absolute;
         top: 28%;
-        left: 48%;
+        left: 48.5%;
 
         // SETUP THE TEXT (h2) TO DISPLAY WITH MULTIPLE COLORS IN THE BACKGROUND \\
         display: inline-block;
@@ -204,6 +225,15 @@
         @include respond(tab-port) {
             margin-bottom: 0;
             top: 20%;
+        }
+
+        @include respond(iphone-p) {
+            top: 25%;
+            left: 45%;
+        }
+
+        @include respond(iphone) {
+            top: 25%;
         }
     }
 
@@ -285,6 +315,10 @@
             top: 50%;
             margin-top: -15rem;
         }
+
+        @include respond(iphone) {
+            top: 45%;
+        }
     }
 
     // CONTENT INSIDE OF THE TEXT DIV ELEMENT
@@ -297,6 +331,14 @@
         // * --- MEDIA QUERIES | FOR THE PARAGRAPH --- * \\
         @include respond(tab-port) {
             padding-top: 50rem;
+        }
+
+        @include respond(iphone-p) {
+            margin-top: -20rem;
+        }
+
+        @include respond(iphone) {
+            margin-top: -20rem;
         }
     }
 

@@ -28,11 +28,49 @@
             width: 100%;
             text-align: center;
         }
+
+        @include respond(iphone-p) {
+            margin-top: -25rem;
+        }
+
+        @include respond(iphone) {
+            margin-top: -25rem;
+        }
     }
 
     &__supp {
         font-size: 1.3rem;
         margin-top: -3rem;
+    }
+
+    &__video iframe {
+        position: absolute;
+        top: 35%;
+        left: 60%;
+
+        /* --- MEDIA QUERIES | FOR THE VIDEO */
+        @include respond(small-desktop) {
+            left: 50%;
+        }
+
+
+        @include respond(lap-top-2) {
+            left: 40%;
+        }
+
+        @include respond(tab-land) {
+            left: 45%;
+            top: 25%;
+            width: 50%;
+            height: 50%;
+        }
+
+        @include respond(phone) {
+            top: 60%;
+            left: 15%;
+            width: 70%;
+            height: 35%;
+        }
     }
 }
 
@@ -67,11 +105,47 @@
             width: 100%;
             text-align: center;
         }
+
+        @include respond(iphone-p) {
+            margin-top: -25rem;
+        }
+
+        @include respond(iphone) {
+            margin-top: -25rem;
+        }
     }
 
     &__supp {
         font-size: 1.3rem;
         margin-top: -3rem;
+    }
+
+    &__video iframe {
+        position: absolute;
+        top: 35%;
+        right: 60%;
+
+        /* --- MEDIA QUERIES | FOR THE VIDEO */
+        @include respond(small-desktop) {
+            right: 50%;
+        }
+
+        @include respond(lap-top-2) {
+            right: 44%;
+        }
+
+        @include respond(tab-land) {
+            top: 22%;
+            width: 50%;
+            height: 50%;
+        }
+
+        @include respond(phone) {
+            top: 60%;
+            right: 15%;
+            width: 70%;
+            height: 35%;
+        }
     }
 }
 
@@ -106,10 +180,47 @@
             width: 100%;
             text-align: center;
         }
+
+        @include respond(iphone-p) {
+            margin-top: -25rem;
+        }
+
+        @include respond(iphone) {
+            margin-top: -25rem;
+        }
     }
 
     &__supp {
         font-size: 1.3rem;
         margin-top: -3rem;
+    }
+
+    &__video iframe {
+        position: absolute;
+        top: 35%;
+        left: 60%;
+
+        /* --- MEDIA QUERIES | FOR THE VIDEO */
+        @include respond(small-desktop) {
+            left: 50%;
+        }
+
+        @include respond(lap-top-2) {
+            left: 40%;
+        }
+
+        @include respond(tab-land) {
+            left: 45%;
+            top: 25%;
+            width: 50%;
+            height: 50%;
+        }
+
+        @include respond(phone) {
+            top: 60%;
+            left: 15%;
+            width: 70%;
+            height: 35%;
+        }
     }
 }
