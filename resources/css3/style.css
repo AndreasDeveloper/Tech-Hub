@@ -868,6 +868,7 @@ body {
     position: absolute;
     top: 35%;
     left: 60%;
+    border: 0.2rem solid #76b900;
     /* --- MEDIA QUERIES | FOR THE VIDEO */ }
     @media (min-width: 86.375em) {
       .section-game-1__video iframe {
@@ -926,6 +927,7 @@ body {
     position: absolute;
     top: 35%;
     right: 60%;
+    border: 0.2rem solid #76b900;
     /* --- MEDIA QUERIES | FOR THE VIDEO */ }
     @media (min-width: 86.375em) {
       .section-game-2__video iframe {
@@ -983,6 +985,7 @@ body {
     position: absolute;
     top: 35%;
     left: 60%;
+    border: 0.2rem solid #76b900;
     /* --- MEDIA QUERIES | FOR THE VIDEO */ }
     @media (min-width: 86.375em) {
       .section-game-3__video iframe {

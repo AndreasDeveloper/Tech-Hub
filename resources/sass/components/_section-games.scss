@@ -47,6 +47,7 @@
         position: absolute;
         top: 35%;
         left: 60%;
+        border: .2rem solid $color-primary;
 
         /* --- MEDIA QUERIES | FOR THE VIDEO */
         @include respond(small-desktop) {
@@ -124,6 +125,7 @@
         position: absolute;
         top: 35%;
         right: 60%;
+        border: .2rem solid $color-primary;
 
         /* --- MEDIA QUERIES | FOR THE VIDEO */
         @include respond(small-desktop) {
@@ -199,6 +201,7 @@
         position: absolute;
         top: 35%;
         left: 60%;
+        border: .2rem solid $color-primary;
 
         /* --- MEDIA QUERIES | FOR THE VIDEO */
         @include respond(small-desktop) {
