@@ -36,7 +36,16 @@
         color: $color-white;
         text-transform: uppercase;
         text-decoration: none;
-        font-size: 1.7rem;
+        font-size: 1.7rem;  
+        // IN ORDER TO AVOID THE NAVIGATION GLITCH WHILE SHOWING BORDER-BOTTOM, BORDER-BOTTOM NEEDS TO BE ADDED TO NORMAL (NON-FIX) ANCHOR ELEMENTS \\
+        border-bottom: .2rem solid transparent;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom 0.2s;
+        padding-bottom: 1rem;
+
+        &:hover {
+            border-bottom: .2rem solid $color-primary;
+        }
     }
 
     &__menu-icon {
@@ -113,7 +122,7 @@ nav.scroll ul li a {
     top: 0;
     height: 7rem;
     z-index: 20;
-    border-bottom: .1rem solid $color-primary;
+    border-bottom: .2rem solid $color-primary;
 
     .navigation__anchor {
         border-bottom: .2rem solid transparent;
@@ -122,6 +131,6 @@ nav.scroll ul li a {
     }
 
     .navigation__anchor:hover {
-        border-bottom: .1rem solid $color-primary;
+        border-bottom: .2rem solid $color-primary;
     }
 }

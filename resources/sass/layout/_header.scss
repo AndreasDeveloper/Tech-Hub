@@ -15,6 +15,10 @@
         transform: translate(-50%, -50%);
         text-align: left;
 
+        &__button {
+            margin-top: -2rem;
+        }
+
         // * --- MEDIA QUERIES * --- \\
         @include respond(lap-top-2) {
             left: 36%;
